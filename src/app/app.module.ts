@@ -10,6 +10,10 @@ import { FooterComponent } from './footer/footer.component';
 import { FuncionamentoComponent } from './funcionamento/funcionamento.component';
 import { SharedChartComponent } from './shared-chart/shared-chart.component';
 import { SobreComponent } from './sobre/sobre.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ServicosComponent } from './servicos/servicos.component';
+import { ImportsModule } from './imports/imports.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -21,10 +25,15 @@ import { SobreComponent } from './sobre/sobre.component';
     FooterComponent,
     FuncionamentoComponent,
     SharedChartComponent,
-    SobreComponent
+    SobreComponent,
+    ServicosComponent,
+
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    ImportsModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
